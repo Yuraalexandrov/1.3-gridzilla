@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>border_practice</title>
+	<style type="text/css">
+	.main-block {
+		background: #E4DDD3;
+		margin: 40px auto;
+		max-width: 500px;
+		min-height: 570px;
+		padding: 25px 0 0 0;
+	}
+	ul{
+		list-style-type: none;
+		/*background: yellow;*/
+		margin: 0 0 0 0;
+		padding: 0 auto;
+	}
+	li {
+		display: inline;
+		margin: 0 0 0 5px;
+		font-size: 14px;
+		padding: 5px 10px 5px 10px;
+ 		font-family: arial;
+ 		font-weight: bold;
+ 		color: #2B2B2B;
+ 		/*border-radius: 5px;*/
+ 		background: yellow;
+	}
+	li:first-child {
+		/*background: green;*/
+		margin: 0;
+	}
+	li:last-child {
+		border: none;
+	}
+	.main-block li:nth-child(2n) {
+		background: green;
+		content: none;
+		margin: 0;
+		padding: 0;
+		border-right: 2px solid #ECECEC;
+	}
+	li:hover {
+		background: #E436D0;
+		border-radius: 3px;
+	}
+	.lists {
+		margin: 0 auto;
+		/*background: red;*/
+		max-width: 400px;
+	}
+
+	.second_list {
+		margin: 50px auto;
+		max-width: 400px;
+		background: yellow;
+	}
+	.second_list ul {
+		margin: 0 auto 0 auto;
+	}
+	.second_list li {
+		border: 1px solid black;
+		border-radius: 0;
+	}
+	.second_list li:nth-child(2n) {
+		
+	}
+	</style>
+</head>
+<body>
+	<div class="main-block">
+		<div class="lists">
+			<ul>
+				<li>HOME</li>
+				<li></li>
+				<li>ABOUT</li>
+				<li></li>
+				<li>BLOG</li>
+				<li></li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

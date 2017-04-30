@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>border_practice</title>
+	<style type="text/css">
+	.main-block {
+		background: #E4DDD3;
+		margin: 40px auto;
+		max-width: 500px;
+		min-height: 570px;
+		padding: 25px 0 0 0;
+	}
+	ul{
+		list-style-type: none;
+		/*background: yellow;*/
+		margin: 0px 0 0 0;
+		padding: 0;
+		display: flex;
+	}
+	li {
+		display: inline;
+		margin: 0 0 0 -4px;
+		font-size: 12px;
+		padding: 5px 10px 3px 10px;
+ 		font-family: arial;
+ 		font-weight: bold;
+ 		color: #2B2B2B;
+ 		border-radius: 0px;
+ 		background: #D3D9E9;
+ 		border-top: 1px solid black;
+	}
+	li:first-child {
+		/*background: green;*/
+		margin: 0;
+	}
+	li:nth-child(2n) {
+		background: blue;
+		content: " ";
+		margin: 0;
+		padding: 0px;
+		/*border-right: 1px solid #bbb;*/
+		padding:0 3px 0 3px;
+		/*background-image: url(poloska_3.png);*/
+	}
+	li:nth-child(2n):hover {
+		/*background: blue;*/
+		/*content: none;*/
+		margin: 0;
+		padding: 0px;
+		border-top: 1px solid black;
+		padding:0 2px 0 4px;
+	}
+	li:hover {
+		/*background: #E436D0;*/
+		border-radius: 0px;
+		border-top: 1px solid red;
+	}
+	.lists {
+		background: green;
+		margin: 0 auto 0 0px;
+		/*background: red;*/
+		max-width: 500px;
+		min-height: 15px;
+		/*border-top: 1px solid black;*/
+		display: flex;
+	}
+	.for_line {
+		background: yellow;
+		width: 250px;
+		min-height: 20px;
+ 		border-top: 1px solid black;
+	}
+
+	.first::before {
+	/*	font-size: 10px;
+		font-family: arial;
+		font-weight: bold;*/
+		color: black;
+		border-left: 1px solid black;
+	    /*content: " ";*/
+	}
+	a::before {
+		margin: 10px 0 0 0;
+		padding: 0 0 0px 0;
+		text-decoration: none;
+		border-left: 1px solid black;
+		content: " ";
+	}
+	</style>
+</head>
+<body>
+	<div class="main-block">
+		<div class="lists">
+				<ul>
+					<li>HOME</li>
+					<li><a href=""></a></li>
+					<li>ABOUT</li>
+					<li><p>this</p></li>
+					<li>BLOG</li>
+					<li></li>
+					<li>CONTACT</li>
+					<li></li>
+					<li>LAST</li>
+				</ul>
+				<div class="for_line"></div>	
+		</div>	
+
+		<p class="first"></p>
+
+	</div>
+</body>
+</html>
